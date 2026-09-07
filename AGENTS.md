@@ -76,6 +76,23 @@ O arquivo `vercel.json` deve sempre conter as seguintes configurações para evi
 - **Plano de Contingência (Anti-Bloqueio)**: O Instagram frequentemente bloqueia acesso automatizado. Se a leitura direta da URL falhar, extraia o `@nome_de_usuario` do link.
 - Em seguida, realize uma busca no Google usando o `@usuário` ou `"nome da empresa + Instagram"`. Utilize os textos públicos indexados pelo buscador e as imagens da empresa vinculadas a esse perfil no Google Imagens para capturar as fotos e dados necessários.
 
+### 3.6. Condizente com a Realidade da Empresa
+- Qualquer imagem DEVE espelhar rigorosamente a estrutura, a paleta de cores e o contexto real do estabelecimento físico do cliente.
+- Se a empresa é um posto de bandeira própria (ex: Beach Posto), é terminantemente proibido utilizar ou gerar imagens que remetam a marcas concorrentes (como Shell, Ipiranga, BR, Texaco) ou estruturas inexistentes no local.
+
+### 3.7. Proibição de Logos Falsas (Tolerância Zero)
+- A IA de geração de imagens NÃO DEVE tentar escrever textos ou desenhar logos nas imagens para evitar alucinações e marcas distorcidas.
+- Se houver a logo da empresa, é expressamente proibido usar outra marca gerada por IA.
+- A imagem base deve conter apenas "uniformes lisos", "fachadas limpas" e "superfícies sem letreiros", priorizando as cores oficiais do negócio.
+
+### 3.8. Injeção da Logo Oficial via Código (HTML/CSS)
+- Para exibir a marca na fachada, totem, seções de destaque ou sobre os uniformes, utilize **obrigatoriamente o arquivo da logo oficial** fornecido pelo usuário (ex: `logo.png`).
+- Aplique a logo verdadeira sobre áreas das imagens (como o totem do posto, cards ou na seção hero) utilizando sobreposição via código (HTML/CSS com `position: absolute` ou flexbox/grid).
+- A única marca comercial permitida em destaque na tela é o arquivo oficial da empresa.
+
+### 3.9. Fotorrealismo Absoluto (Padrão RAW / DSLR)
+- As imagens devem ser 100% fotográficas (RAW, DSLR autêntico). Qualquer aspecto de desenho, pintura digital ou renderização 3D anula o código.
+
 ---
 
 ## 4. 🚀 Etapa de Pré-Deploy: Auto-Auditoria de SEO e Estrutura (Estilo SEOptimer)
@@ -114,8 +131,9 @@ Antes de finalizar qualquer projeto ou emitir o build, você **DEVE** rodar uma 
 ## 5. ✅ Checklist de Qualidade antes de Cada Commit
 1. Verificar integridade do JSON de configuração (`JSON.parse`, sem caracteres BOM).
 2. Auditar que nenhum script inline foi introduzido.
-3. Garantir cumprimento das regras de imagens (busca prévia de fotos reais antes de qualquer geração por IA).
-4. Executar e aprovar a auto-auditoria estrita de SEO e estrutura (Estilo SEOptimer).
-5. Confirmar que todas as instruções do prompt foram integralmente contempladas.
+3. Garantir cumprimento das regras de imagens (busca prévia de fotos reais sem marcas de terceiros/concorrentes).
+4. Assegurar injeção da logo oficial (`logo.png`) via HTML/CSS em sobreposição e ausência total de logos alucinadas ou marcas concorrentes.
+5. Executar e aprovar a auto-auditoria estrita de SEO e estrutura (Estilo SEOptimer).
+6. Confirmar que todas as instruções do prompt foram integralmente contempladas.
 
 

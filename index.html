@@ -176,15 +176,27 @@
       <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-transparent"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/30"></div>
 
+      <!-- Totem Oficial Beach Posto (Sobreposição via Código com a Logo Oficial) -->
+      <div class="absolute top-6 right-6 z-20 hidden lg:flex flex-col items-center p-5 rounded-2xl bg-white/95 backdrop-blur-md border border-white/50 shadow-2xl transition-transform hover:scale-105">
+        <img src="logo.png" alt="Logotipo Oficial Beach Posto" class="h-16 w-auto object-contain" />
+        <span class="mt-2.5 text-[11px] font-heading font-black tracking-wider uppercase text-navy-950 bg-beach-yellow px-3 py-0.5 rounded-full shadow-xs">Bandeira Própria</span>
+        <span class="text-[10px] text-slate-500 font-semibold mt-1">Florianópolis • SC</span>
+      </div>
+
       <!-- Conteúdo Principal do Hero -->
       <div class="relative z-10 p-6 sm:p-12 lg:p-16 max-w-3xl space-y-6">
         
-        <!-- Selo de Atendimento 24h -->
-        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs sm:text-sm font-semibold tracking-wide">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-          <span class="text-beach-yellow">✦ ATENDIMENTO 24 HORAS</span>
-          <span class="text-white/40">•</span>
-          <span class="text-slate-200">Norte da Ilha de Florianópolis</span>
+        <!-- Logo Oficial Injetada e Selo de Atendimento 24h -->
+        <div class="flex flex-wrap items-center gap-3">
+          <div class="p-2.5 rounded-2xl bg-white/95 backdrop-blur-sm border border-white/40 shadow-md">
+            <img src="logo.png" alt="Beach Posto Oficial" class="h-9 sm:h-11 w-auto object-contain" />
+          </div>
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs sm:text-sm font-semibold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span class="text-beach-yellow">✦ ATENDIMENTO 24 HORAS</span>
+            <span class="text-white/40">•</span>
+            <span class="text-slate-200">Norte da Ilha de Florianópolis</span>
+          </div>
         </div>
 
         <!-- Título de Grande Impacto -->
@@ -382,6 +394,14 @@
         <!-- Lado Visual: Foto do Eletroposto -->
         <div class="lg:col-span-6 relative">
           <div class="rounded-3xl overflow-hidden shadow-xl border border-navy-900/10 relative bg-eletroposto-section bg-[url('img/eletroposto.jpg')] bg-cover bg-center bg-no-repeat h-[380px] sm:h-[460px] flex flex-col justify-end" style="background-image: url('img/eletroposto.jpg');" role="img" aria-label="Estação de Recarga EZVolt no Beach Posto">
+            
+            <!-- Injeção da Logo Oficial Beach Posto via Código -->
+            <div class="absolute top-5 left-5 z-10 p-2.5 rounded-2xl bg-white/95 backdrop-blur-md border border-white/50 shadow-md flex items-center gap-2.5">
+              <img src="logo.png" alt="Beach Posto Eletroposto" class="h-8 w-auto object-contain" />
+              <div class="h-5 w-px bg-slate-200"></div>
+              <span class="text-[10px] font-heading font-black text-emerald-800 uppercase tracking-wider">Eletroposto Oficial</span>
+            </div>
+
             <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
             <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-white/40 shadow-lg flex items-center justify-between">
               <div>
@@ -522,6 +542,14 @@
         <!-- Coluna de Foto da Loja / Vitrine -->
         <div class="lg:col-span-5 relative">
           <div class="rounded-3xl overflow-hidden shadow-xl border border-navy-900/10 h-full min-h-[360px] relative group bg-padaria-section bg-[url('img/padaria.jpg')] bg-cover bg-center bg-no-repeat flex flex-col justify-end" style="background-image: url('img/padaria.jpg');" role="img" aria-label="Padaria e Conveniência 24h Beach Posto">
+            
+            <!-- Injeção da Logo Oficial Beach Posto via Código -->
+            <div class="absolute top-5 left-5 z-10 p-2.5 rounded-2xl bg-white/95 backdrop-blur-md border border-white/50 shadow-md flex items-center gap-2.5">
+              <img src="logo.png" alt="Beach Posto Conveniência" class="h-8 w-auto object-contain" />
+              <div class="h-5 w-px bg-slate-200"></div>
+              <span class="text-[10px] font-heading font-black text-amber-900 uppercase tracking-wider">Padaria & Conveniência</span>
+            </div>
+
             <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
             <div class="absolute bottom-6 left-6 right-6 text-white">
               <span class="px-3 py-1 rounded-full bg-beach-yellow text-navy-950 font-heading font-bold text-xs">Aberto 24 Horas</span>
@@ -610,6 +638,17 @@
         <!-- Foto dos Serviços -->
         <div class="lg:col-span-6 order-1 lg:order-2">
           <div class="rounded-3xl overflow-hidden shadow-xl border border-navy-900/10 relative group bg-equipe-section bg-[url('img/equipe.jpg')] bg-cover bg-center bg-no-repeat h-[360px] sm:h-[420px] flex flex-col justify-end" style="background-image: url('img/equipe.jpg');" role="img" aria-label="Equipe de atendimento e frentistas do Beach Posto">
+            
+            <!-- Injeção da Logo Oficial Beach Posto via Código -->
+            <div class="absolute top-5 left-5 z-10 p-2.5 rounded-2xl bg-white/95 backdrop-blur-md border border-white/50 shadow-md flex items-center gap-2.5">
+              <img src="logo.png" alt="Beach Posto Equipe" class="h-8 w-auto object-contain" />
+              <div class="h-5 w-px bg-slate-200"></div>
+              <div class="leading-tight">
+                <p class="text-[9px] font-heading font-black text-beach-blue uppercase tracking-wider">Equipe Autorizada</p>
+                <p class="text-xs font-heading font-extrabold text-navy-950">Beach Posto 24h</p>
+              </div>
+            </div>
+
             <div class="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent"></div>
             <div class="absolute bottom-6 left-6 right-6 text-white">
               <span class="px-3 py-1 rounded-full bg-emerald-500 text-white font-heading font-bold text-xs">Atendimento Especializado</span>

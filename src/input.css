@@ -41,3 +41,33 @@
 .red-glow {
   box-shadow: 0 0 35px rgba(227, 27, 35, 0.25);
 }
+
+/* Seções com Imagens de Fundo (Background-Image) */
+.bg-hero-section {
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-eletroposto-section {
+  background-image: url('../img/eletroposto.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-padaria-section {
+  background-image: url('../img/padaria.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-equipe-section {
+  background-image: url('../img/equipe.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+

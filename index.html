@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beach Posto | Posto 24h, Conveniência e Eletroposto em Florianópolis</title>
+  <meta name="description" content="Beach Posto em Florianópolis: combustíveis com qualidade garantida, conveniência 24h, lanchonete, padaria, lavanderia e eletroposto EZVolt." />
+  <link rel="canonical" href="https://beachposto.vercel.app/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://beachposto.vercel.app/" />
+  <meta property="og:title" content="Beach Posto | Posto 24h, Conveniência e Eletroposto em Florianópolis" />
+  <meta property="og:description" content="Combustíveis de procedência, conveniência 24h, lanchonete, padaria, lavanderia e estação de recarga para carros elétricos em Cachoeira do Bom Jesus." />
+  <meta property="og:image" content="https://beachposto.vercel.app/logo.png" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Beach Posto | Posto 24h, Conveniência e Eletroposto em Florianópolis" />
+  <meta name="twitter:description" content="Combustíveis de qualidade, conveniência 24 horas, padaria, lavanderia e eletroposto em Cachoeira do Bom Jesus, Florianópolis." />
+  <meta name="twitter:image" content="https://beachposto.vercel.app/logo.png" />
+
+  <!-- Favicon Oficial com Proporções Preservadas -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- Schema.org (Dados Estruturados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GasStation",
+    "name": "Beach Posto",
+    "image": "https://beachposto.vercel.app/logo.png",
+    "url": "https://beachposto.vercel.app/",
+    "telephone": "+554830549234",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Luiz Boiteux Piazza, 2099",
+      "addressLocality": "Florianópolis",
+      "addressRegion": "SC",
+      "postalCode": "88056-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -27.420658,
+      "longitude": -48.423984
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/beachposto"
+    ]
+  }
+  </script>
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; object-src 'none'; base-uri 'self'; frame-ancestors 'none';" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome Offline -->
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <!-- Precompiled Tailwind CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-[#FAFAF9] text-navy-900 font-sans antialiased selection:bg-beach-yellow selection:text-navy-950">
+
+  <!-- Barra Superior de Destaque -->
+  <div class="bg-navy-950 text-white text-xs sm:text-sm py-2.5 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 font-medium">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Atendimento <strong>24 Horas</strong> • Cachoeira do Bom Jesus, Florianópolis</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-semibold">
+        <span class="hidden md:inline-flex items-center gap-1.5 text-beach-yellow">
+          <i class="fa-solid fa-bolt"></i> Eletroposto EZVolt Ativo (R$ 2,40/kWh)
+        </span>
+        <a href="https://www.google.com/maps/search/?api=1&query=Av.+Luiz+Boiteux+Piazza,+2099+-+Cachoeira+do+Bom+Jesus,+Florianopolis+-+SC,+88056-000" target="_blank" rel="noopener noreferrer" class="text-white hover:text-beach-yellow transition-colors underline decoration-beach-yellow/60">
+          <i class="fa-solid fa-location-dot text-beach-red"></i> Como Chegar
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Barra de Navegação -->
+  <header class="sticky top-0 z-40 bg-[#FAFAF9]/95 backdrop-blur-md border-b border-navy-900/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+      
+      <!-- Logo Oficial Preservada -->
+      <a href="#" class="flex items-center gap-3 group" aria-label="Página inicial Beach Posto">
+        <img src="logo.png" alt="Beach Posto - Florianópolis" class="h-12 sm:h-16 w-auto object-contain rounded-xl shadow-sm border border-navy-900/10 group-hover:scale-[1.02] transition-transform duration-300" />
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden lg:flex items-center gap-7 font-heading text-sm font-semibold text-navy-800">
+        <a href="#posto" class="hover:text-beach-blue transition-colors">O Posto</a>
+        <a href="#combustiveis" class="hover:text-beach-blue transition-colors">Combustíveis</a>
+        <a href="#eletroposto" class="hover:text-beach-blue transition-colors flex items-center gap-1.5 text-emerald-700">
+          <i class="fa-solid fa-charging-station text-xs"></i> Eletroposto
+        </a>
+        <a href="#conveniencia" class="hover:text-beach-blue transition-colors">Conveniência & Padaria</a>
+        <a href="#servicos" class="hover:text-beach-blue transition-colors">Serviços Automotivos</a>
+        <a href="#localizacao" class="hover:text-beach-blue transition-colors">Localização</a>
+        <a href="#faq" class="hover:text-beach-blue transition-colors">Dúvidas</a>
+      </nav>
+
+      <!-- Ações Diretas no Header -->
+      <div class="hidden sm:flex items-center gap-3.5">
+        <a href="https://www.instagram.com/beachposto?igshid=pm95jwybc2ks" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-navy-900/5 hover:bg-[#E4405F]/10 text-navy-700 hover:text-[#E4405F] transition-all flex items-center justify-center text-lg" title="Instagram @beachposto" aria-label="Instagram Beach Posto">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        
+        <a href="https://www.google.com/maps/search/?api=1&query=Av.+Luiz+Boiteux+Piazza,+2099+-+Cachoeira+do+Bom+Jesus,+Florianopolis+-+SC,+88056-000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-beach-yellow hover:bg-beach-sun text-navy-950 font-heading text-sm font-bold shadow-md hover:shadow-lg transition-all duration-200">
+          <i class="fa-solid fa-location-arrow text-beach-red"></i>
+          <span>Traçar Rota</span>
+        </a>
+      </div>
+
+      <!-- Botão Hambúrguer Mobile -->
+      <button type="button" id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl text-navy-900 hover:bg-navy-900/5 transition-colors" aria-label="Abrir menu de navegação">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Gaveta Mobile -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-navy-950/60 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <aside id="mobile-drawer" class="fixed top-0 right-0 h-full w-4/5 max-w-xs bg-white shadow-2xl z-50 p-6 flex flex-col justify-between translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-navy-900/10 mb-6">
+        <img src="logo.png" alt="Beach Posto" class="h-10 w-auto object-contain" />
+        <button type="button" id="mobile-menu-close-btn" class="p-2 rounded-lg text-navy-700 hover:bg-navy-900/5" aria-label="Fechar menu">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-4 font-heading font-semibold text-base text-navy-800">
+        <a href="#posto" class="mobile-nav-link py-2 border-b border-navy-900/5 hover:text-beach-blue">O Posto</a>
+        <a href="#combustiveis" class="mobile-nav-link py-2 border-b border-navy-900/5 hover:text-beach-blue">Combustíveis</a>
+        <a href="#eletroposto" class="mobile-nav-link py-2 border-b border-navy-900/5 text-emerald-700 font-bold">Eletroposto EZVolt</a>
+        <a href="#conveniencia" class="mobile-nav-link py-2 border-b border-navy-900/5 hover:text-beach-blue">Conveniência & Padaria</a>
+        <a href="#servicos" class="mobile-nav-link py-2 border-b border-navy-900/5 hover:text-beach-blue">Serviços Automotivos</a>
+        <a href="#localizacao" class="mobile-nav-link py-2 border-b border-navy-900/5 hover:text-beach-blue">Localização</a>
+        <a href="#faq" class="mobile-nav-link py-2 hover:text-beach-blue">Perguntas Frequentes</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-navy-900/10 space-y-3">
+      <a href="https://www.google.com/maps/search/?api=1&query=Av.+Luiz+Boiteux+Piazza,+2099+-+Cachoeira+do+Bom+Jesus,+Florianopolis+-+SC,+88056-000" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-beach-yellow text-navy-950 font-heading font-bold shadow-sm">
+        <i class="fa-solid fa-location-arrow text-beach-red"></i> Traçar Rota no GPS
+      </a>
+      <a href="https://wa.me/554830549234?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Beach%20Posto." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-emerald-600 text-white font-heading font-semibold shadow-sm">
+        <i class="fa-brands fa-whatsapp text-lg"></i> Falar no WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- HERO SECTION (Inspirada no Mockup com Alto Contraste e Imponência) -->
+  <section id="posto" class="pt-6 pb-12 sm:pt-8 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-navy-900/20 bg-navy-950 min-h-[560px] sm:min-h-[620px] flex items-center">
+      
+      <!-- Imagem de Fundo em Alta Resolução -->
+      <img src="img/hero.jpg" alt="Beach Posto Iluminado 24h em Florianópolis" class="absolute inset-0 w-full h-full object-cover object-center opacity-45 sm:opacity-55" />
+      
+      <!-- Gradiente Cinematográfico de Fundo -->
+      <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-navy-950/30"></div>
+
+      <!-- Conteúdo Principal do Hero -->
+      <div class="relative z-10 p-6 sm:p-12 lg:p-16 max-w-3xl space-y-6">
+        
+        <!-- Selo de Atendimento 24h -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs sm:text-sm font-semibold tracking-wide">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="text-beach-yellow">✦ ATENDIMENTO 24 HORAS</span>
+          <span class="text-white/40">•</span>
+          <span class="text-slate-200">Norte da Ilha de Florianópolis</span>
+        </div>
+
+        <!-- Título de Grande Impacto -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight tracking-tight">
+          A sua parada completa com <span class="text-beach-yellow underline decoration-beach-red decoration-4">combustível de qualidade</span>, conveniência e eletroposto.
+        </h1>
+
+        <!-- Subtítulo Informativo -->
+        <p class="text-base sm:text-lg text-slate-200 leading-relaxed font-normal max-w-2xl">
+          Estrategicamente localizado na Cachoeira do Bom Jesus. Abasteça com total procedência, aproveite nossa padaria e lanchonete 24h, faça sua recarga elétrica na estação <strong>EZVolt</strong> e conte com serviços automotivos completos.
+        </p>
+
+        <!-- Botões de Ação do Hero (Destaque Amarelo inspirado no mockup) -->
+        <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+          <a href="https://www.google.com/maps/search/?api=1&query=Av.+Luiz+Boiteux+Piazza,+2099+-+Cachoeira+do+Bom+Jesus,+Florianopolis+-+SC,+88056-000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-beach-yellow hover:bg-beach-sun text-navy-950 font-heading font-extrabold text-base transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0">
+            <i class="fa-solid fa-location-dot text-beach-red text-lg"></i>
+            <span>Como Chegar (Abrir no GPS)</span>
+          </a>
+
+          <a href="#eletroposto" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-heading font-bold text-base backdrop-blur-md border border-white/20 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0">
+            <i class="fa-solid fa-bolt text-emerald-400"></i>
+            <span>Conhecer Eletroposto</span>
+          </a>
+        </div>
+
+        <!-- Mini Tags Rápidas -->
+        <div class="pt-4 flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-300">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Bicos Aferidos & Testados</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Lanchonete & Padaria 24h</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Lavanderia no Local</span>
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> R$ 2,40/kWh EZVolt</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TRIO DE DESTAQUES (Cards Idênticos ao Mockup de Referência) -->
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1: Atendimento 24 Horas -->
+      <div class="bg-white rounded-2xl p-6 sm:p-7 border border-navy-900/10 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+        <div class="w-12 h-12 rounded-xl bg-beach-yellow/20 text-navy-950 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-clock text-amber-600"></i>
+        </div>
+        <h2 class="text-xl font-heading font-bold text-navy-950 mb-2">Atendimento 24 Horas</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Funcionamento contínuo 7 dias por semana. Abastecimento, loja de conveniência e serviços sempre abertos para atender moradores e turistas do Norte da Ilha.
+        </p>
+        <div class="mt-4 pt-4 border-t border-navy-900/5 flex items-center gap-2 text-xs font-bold text-beach-blue uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Sempre Aberto
+        </div>
+      </div>
+
+      <!-- Card 2: Eletroposto EZVolt -->
+      <div class="bg-white rounded-2xl p-6 sm:p-7 border border-emerald-500/20 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+        <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-charging-station"></i>
+        </div>
+        <h2 class="text-xl font-heading font-bold text-navy-950 mb-2">Eletroposto EZVolt</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Ponto estruturado em parceria com a EZVolt (Rede Brasilis Power). Recarregue seu carro elétrico com tarifa média de <strong>R$ 2,40 por kWh</strong> com rapidez e segurança.
+        </p>
+        <div class="mt-4 pt-4 border-t border-navy-900/5 flex items-center gap-2 text-xs font-bold text-emerald-700 uppercase tracking-wider">
+          <i class="fa-solid fa-bolt"></i> Tarifa R$ 2,40 / kWh
+        </div>
+      </div>
+
+      <!-- Card 3: Conveniência & Lavanderia -->
+      <div class="bg-white rounded-2xl p-6 sm:p-7 border border-navy-900/10 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+        <div class="w-12 h-12 rounded-xl bg-beach-red/10 text-beach-red flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+          <i class="fa-solid fa-mug-hot"></i>
+        </div>
+        <h2 class="text-xl font-heading font-bold text-navy-950 mb-2">Conveniência & Lavanderia</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Pães artesanais, cafés gourmets, lanches, bebidas geladas e uma estrutura exclusiva de lavanderia no local para seu total conforto enquanto espera.
+        </p>
+        <div class="mt-4 pt-4 border-t border-navy-900/5 flex items-center gap-2 text-xs font-bold text-beach-red uppercase tracking-wider">
+          <i class="fa-solid fa-shirt"></i> Estrutura Completa
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 1: COMBUSTÍVEIS COM PROCEDÊNCIA E QUALIDADE -->
+  <section id="combustiveis" class="py-16 bg-white border-y border-navy-900/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabeçalho de Seção -->
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-beach-blue font-heading">[combustíveis de alta qualidade]</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 mt-2">
+          Abasteça com total confiança, rendimento e motor protegido
+        </h2>
+        <p class="text-base text-slate-600 mt-3 leading-relaxed">
+          Garantimos a procedência de cada gota de combustível através de rigoroso padrão técnico, filtros de alta densidade e bicos calibrados periodicamente.
+        </p>
+      </div>
+
+      <!-- Grid dos Combustíveis -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Gasolina Comum -->
+        <div class="bg-sand-50 rounded-2xl p-6 border border-navy-900/10 hover:border-beach-blue/40 transition-all group">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold font-heading">Gasolina</span>
+            <i class="fa-solid fa-gas-pump text-2xl text-blue-600 group-hover:scale-110 transition-transform"></i>
+          </div>
+          <h3 class="text-xl font-heading font-bold text-navy-950 mb-2">Comum</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Combustível refinado de excelente queima, proporcionando resposta ágil para a rotina diária no trânsito urbano e rodovias.
+          </p>
+          <ul class="mt-4 pt-4 border-t border-navy-900/5 text-xs text-slate-500 space-y-2">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Octanagem rigorosa</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Teste de proveta imediato</li>
+          </ul>
+        </div>
+
+        <!-- Gasolina Aditivada -->
+        <div class="bg-sand-50 rounded-2xl p-6 border border-beach-yellow/40 hover:border-beach-yellow transition-all group relative overflow-hidden">
+          <span class="absolute top-0 right-0 bg-beach-yellow text-navy-950 text-[10px] font-extrabold px-3 py-1 rounded-bl-lg uppercase tracking-wider font-heading">Recomendado</span>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold font-heading">Aditivada</span>
+            <i class="fa-solid fa-fire-flame-curved text-2xl text-amber-600 group-hover:scale-110 transition-transform"></i>
+          </div>
+          <h3 class="text-xl font-heading font-bold text-navy-950 mb-2">Aditivada</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Com tecnologia dispersante que limpa válvulas e bicos injetores, reduz atritos internos e preserva a vida útil do motor.
+          </p>
+          <ul class="mt-4 pt-4 border-t border-navy-900/5 text-xs text-slate-500 space-y-2">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Limpeza ativa do sistema</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Maior autonomia por tanque</li>
+          </ul>
+        </div>
+
+        <!-- Etanol Hidratado -->
+        <div class="bg-sand-50 rounded-2xl p-6 border border-navy-900/10 hover:border-emerald-500/40 transition-all group">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold font-heading">Etanol</span>
+            <i class="fa-solid fa-leaf text-2xl text-emerald-600 group-hover:scale-110 transition-transform"></i>
+          </div>
+          <h3 class="text-xl font-heading font-bold text-navy-950 mb-2">Etanol</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Biocombustível limpo de origem renovável, gerando excelente torque e aceleração instantânea em motores flex.
+          </p>
+          <ul class="mt-4 pt-4 border-t border-navy-900/5 text-xs text-slate-500 space-y-2">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Menor emissão de poluentes</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Resposta rápida no acelerador</li>
+          </ul>
+        </div>
+
+        <!-- Diesel S10 e S500 -->
+        <div class="bg-sand-50 rounded-2xl p-6 border border-navy-900/10 hover:border-navy-700/40 transition-all group">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-3 py-1 rounded-full bg-slate-200 text-slate-800 text-xs font-bold font-heading">Diesel</span>
+            <i class="fa-solid fa-truck text-2xl text-navy-700 group-hover:scale-110 transition-transform"></i>
+          </div>
+          <h3 class="text-xl font-heading font-bold text-navy-950 mb-2">Diesel S10 & S500</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Disponível nas versões S10 (ultra baixo teor de enxofre) e S500, garantindo rendimento para vans, caminhonetes, utilitários e caminhões.
+          </p>
+          <ul class="mt-4 pt-4 border-t border-navy-900/5 text-xs text-slate-500 space-y-2">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Proteção contra carbonização</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Vazão rápida para utilitários</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Banner de Compromisso com a Qualidade -->
+      <div class="mt-10 rounded-2xl bg-navy-900 text-white p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 border border-white/10">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-beach-yellow text-navy-950 flex items-center justify-center text-2xl font-bold shrink-0">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <h4 class="text-lg font-heading font-bold text-white">Transparência Total: Teste na sua Frente</h4>
+            <p class="text-xs sm:text-sm text-slate-300">Solicite a qualquer momento o teste padrão de proveta ou aferição de volume com nossa equipe.</p>
+          </div>
+        </div>
+        <a href="https://wa.me/554830549234?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20combust%C3%ADveis%20no%20Beach%20Posto." target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white font-heading font-bold text-sm transition-colors whitespace-nowrap border border-white/20">
+          Falar com Nossa Equipe
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: ELETROPOSTO (RECARGA ELÉTRICA EZVOLT) -->
+  <section id="eletroposto" class="py-16 sm:py-20 bg-[#FAFAF9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Lado Visual: Foto do Eletroposto -->
+        <div class="lg:col-span-6 relative">
+          <div class="rounded-3xl overflow-hidden shadow-xl border border-navy-900/10 relative">
+            <img src="img/eletroposto.jpg" alt="Estação de Recarga de Carro Elétrico no Beach Posto EZVolt" class="w-full h-[380px] sm:h-[460px] object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-white/40 shadow-lg flex items-center justify-between">
+              <div>
+                <p class="text-xs font-bold text-emerald-700 uppercase tracking-wider font-heading">Parceria Oficial</p>
+                <p class="text-base font-heading font-extrabold text-navy-950">EZVolt • Rede Brasilis Power</p>
+              </div>
+              <div class="text-right">
+                <p class="text-[11px] text-slate-500 font-medium">Tarifa Média</p>
+                <p class="text-lg font-heading font-black text-emerald-600">R$ 2,40 <span class="text-xs font-normal text-slate-600">/ kWh</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lado Conteúdo: Detalhes do Eletroposto -->
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-emerald-700 font-heading">[estação de recarga para veículos elétricos]</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 leading-tight">
+            Eletroposto estruturado para a sua viagem no Norte da Ilha nunca parar
+          </h2>
+          <p class="text-base text-slate-600 leading-relaxed">
+            O <strong>Beach Posto</strong> conta com um ponto de recarga moderno em parceria oficial com a <strong>EZVolt (rede Brasilis Power)</strong>. A estação oferece carregamento rápido e seguro com tarifa média de apenas <strong>R$ 2,40 por kWh</strong>.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-navy-900/5 shadow-xs">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-solid fa-battery-three-quarters"></i>
+              </div>
+              <div>
+                <h4 class="text-base font-heading font-bold text-navy-950">Recarga Prática e Confiável</h4>
+                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Estação equipada com protocolos de segurança e conectores padronizados para veículos elétricos e híbridos.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-navy-900/5 shadow-xs">
+              <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-solid fa-mug-saucer"></i>
+              </div>
+              <div>
+                <h4 class="text-base font-heading font-bold text-navy-950">Conforto Enquanto Carrega</h4>
+                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Aproveite para tomar um café especial, provar os salgados da padaria ou usar a lavanderia 24h enquanto aguarda a carga.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-navy-900/5 shadow-xs">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 text-lg">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div>
+                <h4 class="text-base font-heading font-bold text-navy-950">Ambiente Monitorado 24 Horas</h4>
+                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Localização iluminada, segura e com atendimento contínuo, a qualquer hora do dia ou da madrugada.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.+Luiz+Boiteux+Piazza,+2099+-+Cachoeira+do+Bom+Jesus,+Florianopolis+-+SC,+88056-000" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-sm shadow-md transition-colors">
+              <i class="fa-solid fa-location-arrow"></i> Ver Rota até o Eletroposto
+            </a>
+            <span class="text-xs text-slate-500 font-medium">Av. Luiz Boiteux Piazza, 2099</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: CONVENIÊNCIA, PADARIA & LAVANDERIA (Inspirada no Grid do Mockup) -->
+  <section id="conveniencia" class="py-16 sm:py-20 bg-white border-y border-navy-900/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-beach-red font-heading">[conveniência 24h & lanchonete]</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 mt-2">
+          Mais que uma parada: padaria fresca, cafés gourmets e lavanderia no local
+        </h2>
+        <p class="text-base text-slate-600 mt-3 leading-relaxed">
+          Tudo pensado para o seu dia a dia e para a sua viagem: desfrute de produtos frescos a qualquer momento na nossa loja de conveniência completa.
+        </p>
+      </div>
+
+      <!-- Layout Grid Estilo Mockup -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Coluna de Cards de Recursos -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+          
+          <!-- Card Padaria -->
+          <div class="bg-sand-50 rounded-2xl p-6 border border-navy-900/5 hover:border-beach-yellow transition-all">
+            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-bread-slice"></i>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-navy-950 mb-1">Padaria Artesanal</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Pães quentinhos assados várias vezes ao dia, croissants, pão de queijo quentinho e folhados deliciosos.
+            </p>
+          </div>
+
+          <!-- Card Lanchonete & Café -->
+          <div class="bg-sand-50 rounded-2xl p-6 border border-navy-900/5 hover:border-beach-yellow transition-all">
+            <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-800 flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-navy-950 mb-1">Café & Lanches</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Espresso tirado na hora, cappuccinos, salgados fritos e assados de primeira linha, sanduíches naturais e sucos.
+            </p>
+          </div>
+
+          <!-- Card Bebidas & Praia -->
+          <div class="bg-sand-50 rounded-2xl p-6 border border-navy-900/5 hover:border-beach-yellow transition-all">
+            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-snowflake"></i>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-navy-950 mb-1">Bebidas Geladas & Gelo</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Cervejas geladas, refrigerantes, água mineral, energéticos, snacks e sacos de gelo prontos para abastecer seu cooler.
+            </p>
+          </div>
+
+          <!-- Card Estrutura de Lavanderia -->
+          <div class="bg-sand-50 rounded-2xl p-6 border border-beach-red/20 hover:border-beach-red transition-all relative overflow-hidden">
+            <span class="absolute top-2 right-2 bg-beach-red text-white text-[9px] font-bold px-2 py-0.5 rounded-full uppercase">Diferencial</span>
+            <div class="w-10 h-10 rounded-xl bg-rose-100 text-beach-red flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-navy-950 mb-1">Lavanderia no Local</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Estrutura prática de lavanderia no próprio posto. Ideal para turistas de praia e moradores lavarem suas roupas com facilidade.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Coluna de Foto da Loja / Vitrine -->
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-3xl overflow-hidden shadow-xl border border-navy-900/10 h-full min-h-[340px] relative group">
+            <img src="img/conveniencia.jpg" alt="Interior da Loja de Conveniência e Padaria Beach Posto" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <span class="px-3 py-1 rounded-full bg-beach-yellow text-navy-950 font-heading font-bold text-xs">Aberto 24 Horas</span>
+              <h4 class="text-xl font-heading font-bold mt-2">Climatizado e Acolhedor</h4>
+              <p class="text-xs text-slate-300 mt-1">Faça sua pausa com wi-fi, segurança e produtos selecionados.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: SERVIÇOS AUTOMOTIVOS & LAVA-JATO -->
+  <section id="servicos" class="py-16 sm:py-20 bg-[#FAFAF9]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Conteúdo dos Serviços -->
+        <div class="lg:col-span-6 space-y-6 order-2 lg:order-1">
+          <span class="text-xs font-bold uppercase tracking-widest text-beach-blue font-heading">[serviços automotivos completos]</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 leading-tight">
+            Cuidados essenciais para o seu veículo rodar seguro e brilhando
+          </h2>
+          <p class="text-base text-slate-600 leading-relaxed">
+            Muito além do abastecimento: nossa pista oferece serviços preventivos rápidos e cortesia de limpeza para garantir tranquilidade antes de pegar a estrada ou voltar da praia.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            
+            <div class="p-4 rounded-xl bg-white border border-navy-900/5 shadow-xs flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 text-beach-blue flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-heading font-bold text-navy-950">Calibragem Digital</h4>
+                <p class="text-xs text-slate-500">Pressão exata e gratuita</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-navy-900/5 shadow-xs flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 text-beach-blue flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-shower"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-heading font-bold text-navy-950">Lava-Jato Completo</h4>
+                <p class="text-xs text-slate-500">Espuma e brilho intenso</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-navy-900/5 shadow-xs flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 text-beach-blue flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-spray-can-sparkles"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-heading font-bold text-navy-950">Limpeza de Vidros</h4>
+                <p class="text-xs text-slate-500">Cortesia durante o abastecimento</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-navy-900/5 shadow-xs flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 text-beach-blue flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-car-battery"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-heading font-bold text-navy-950">Troca de Palhetas</h4>
+                <p class="text-xs text-slate-500">Substituição rápida e segura</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-navy-900/5 shadow-xs flex items-center gap-3 sm:col-span-2">
+              <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-oil-can"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-heading font-bold text-navy-950">Fluidos & Cuidados com Radiador</h4>
+                <p class="text-xs text-slate-500">Checagem de nível de água, aditivo de radiador e óleo do motor</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Foto dos Serviços -->
+        <div class="lg:col-span-6 order-1 lg:order-2">
+          <div class="rounded-3xl overflow-hidden shadow-xl border border-navy-900/10 relative group">
+            <img src="img/servicos.jpg" alt="Lava-Jato e Serviços Automotivos no Beach Posto" class="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <span class="px-3 py-1 rounded-full bg-emerald-500 text-white font-heading font-bold text-xs">Atendimento Especializado</span>
+              <h4 class="text-lg font-heading font-bold mt-2">Equipe Sempre Pronta para Ajudar</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5: LOCALIZAÇÃO & GOOGLE MAPS INTERATIVO ESTÁTICO (Regra AGENTS.md: Zero Iframes / 100% CSP) -->
+  <section id="localizacao" class="py-16 sm:py-20 bg-white border-t border-navy-900/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-beach-red font-heading">[localização privilegiada]</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 mt-2">
+          No coração de Cachoeira do Bom Jesus, Florianópolis
+        </h2>
+        <p class="text-base text-slate-600 mt-2">
+          Av. Luiz Boiteux Piazza, 2099 - Cachoeira do Bom Jesus, Florianópolis - SC, 88056-000
+        </p>
+      </div>
+
+      <!-- Bloco Estilizado com Imagem do Mapa e Botão Abrir no Google Maps -->
+      <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-navy-900/15 group">
+        
+        <!-- Imagem Estática do Mapa Georreferenciado -->
+        <img src="img/mapa.jpg" alt="Mapa de Localização do Beach Posto na Av. Luiz Boiteux Piazza 2099" class="w-full h-[380px] sm:h-[480px] object-cover object-center group-hover:scale-[1.01] transition-transform duration-500" />
+        
+        <!-- Overlay Elegante -->
+        <div class="absolute inset-0 bg-navy-950/30 group-hover:bg-navy-950/20 transition-colors"></div>
+
+        <!-- Card Central com Botão Destacado "Abrir no Google Maps" -->
+        <div class="absolute inset-0 flex items-center justify-center p-4">
+          <div class="max-w-md w-full p-6 sm:p-8 rounded-2xl bg-white/95 backdrop-blur-md shadow-2xl border border-white/60 text-center space-y-4">
+            
+            <div class="w-12 h-12 rounded-2xl bg-beach-red text-white flex items-center justify-center text-2xl mx-auto shadow-md">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-heading font-extrabold text-navy-950">Beach Posto 24 Horas</h3>
+              <p class="text-xs sm:text-sm text-slate-600 mt-1 font-medium">
+                Av. Luiz Boiteux Piazza, 2099 • Cachoeira do Bom Jesus
+              </p>
+              <p class="text-xs text-emerald-600 font-bold mt-0.5">Florianópolis - SC, 88056-000</p>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://www.google.com/maps/search/?api=1&query=Av.+Luiz+Boiteux+Piazza,+2099+-+Cachoeira+do+Bom+Jesus,+Florianopolis+-+SC,+88056-000" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-xl bg-beach-red hover:bg-beach-darkred text-white font-heading font-bold text-sm shadow-lg hover:shadow-xl transition-all duration-200">
+                <i class="fa-solid fa-map-location-dot text-lg"></i>
+                <span>Abrir no Google Maps</span>
+              </a>
+            </div>
+
+            <p class="text-[11px] text-slate-400">
+              Acesso rápido e sem bloqueios para traçar rota no Waze ou Google Maps.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Indicadores de Proximidade -->
+      <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+        <div class="p-4 rounded-xl bg-sand-50 border border-navy-900/5">
+          <p class="text-xs font-bold text-beach-blue uppercase tracking-wider font-heading">Praia de Cachoeira</p>
+          <p class="text-sm font-semibold text-navy-950 mt-1">A menos de 2 minutos do mar</p>
+        </div>
+        <div class="p-4 rounded-xl bg-sand-50 border border-navy-900/5">
+          <p class="text-xs font-bold text-beach-blue uppercase tracking-wider font-heading">Ponta das Canas & Brava</p>
+          <p class="text-sm font-semibold text-navy-950 mt-1">Parada oficial no trajeto das praias</p>
+        </div>
+        <div class="p-4 rounded-xl bg-sand-50 border border-navy-900/5">
+          <p class="text-xs font-bold text-beach-blue uppercase tracking-wider font-heading">Canasvieiras & SC-401</p>
+          <p class="text-sm font-semibold text-navy-950 mt-1">Acesso fluido e pavimentado</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6: DEPOIMENTOS DE CLIENTES -->
+  <section class="py-16 sm:py-20 bg-sand-50 border-t border-navy-900/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-beach-blue font-heading">[avaliações de quem abastece aqui]</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 mt-2">
+          A parada preferida de moradores e turistas
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-2xl p-6 sm:p-7 border border-navy-900/5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 text-sm mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed italic">
+              "Melhor posto do Norte da Ilha! A padaria tem pão na chapa e café excelentes a qualquer hora, e o eletroposto EZVolt salvou minha viagem com carro elétrico."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-navy-900/5">
+            <p class="text-sm font-heading font-bold text-navy-950">Rodrigo Silveira</p>
+            <p class="text-xs text-slate-500">Turista de Curitiba</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 sm:p-7 border border-navy-900/5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 text-sm mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed italic">
+              "Moro na Cachoeira do Bom Jesus e abasteço sempre aqui. O atendimento da equipe na pista é nota 10, sempre limpam os vidros com cuidado e a gasolina rende muito."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-navy-900/5">
+            <p class="text-sm font-heading font-bold text-navy-950">Mariana Costa</p>
+            <p class="text-xs text-slate-500">Moradora local</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 sm:p-7 border border-navy-900/5 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 text-sm mb-3">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-sm text-slate-600 leading-relaxed italic">
+              "A estrutura de lavanderia no local é um diferencial surreal pra quem aluga casa de temporada. E o fato de ser 24h dá muita segurança para quem volta tarde da praia."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-navy-900/5">
+            <p class="text-sm font-heading font-bold text-navy-950">Carlos Eduardo Mendes</p>
+            <p class="text-xs text-slate-500">Frequentador assíduo</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 7: FAQ (PERGUNTAS FREQUENTES COM ACCORDION NATIVO) -->
+  <section id="faq" class="py-16 sm:py-20 bg-white border-t border-navy-900/5">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-beach-blue font-heading">[tire suas dúvidas]</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-extrabold text-navy-950 mt-2">
+          Perguntas Frequentes sobre o Beach Posto
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- Pergunta 1 -->
+        <div class="faq-item rounded-2xl border border-navy-900/10 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-5 text-left font-heading font-bold text-base text-navy-950 flex items-center justify-between gap-4 hover:bg-sand-50 transition-colors">
+            <span>O Beach Posto funciona realmente 24 horas todos os dias?</span>
+            <i class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden p-5 pt-0 text-sm text-slate-600 leading-relaxed border-t border-navy-900/5">
+            Sim! O Beach Posto está aberto 24 horas por dia, 7 dias por semana, incluindo finais de semana e feriados. Tanto a pista de combustíveis quanto a loja de conveniência e o eletroposto funcionam de forma ininterrupta.
+          </div>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="faq-item rounded-2xl border border-navy-900/10 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-5 text-left font-heading font-bold text-base text-navy-950 flex items-center justify-between gap-4 hover:bg-sand-50 transition-colors">
+            <span>Como funciona a recarga de carros elétricos (Eletroposto EZVolt)?</span>
+            <i class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden p-5 pt-0 text-sm text-slate-600 leading-relaxed border-t border-navy-900/5">
+            Contamos com um ponto de recarga estruturado em parceria com a EZVolt (rede Brasilis Power). A estação opera com tarifa média de R$ 2,40 por kWh. Você pode iniciar o carregamento pelo aplicativo da EZVolt de maneira simples e rápida enquanto usufrui da conveniência e do café.
+          </div>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="faq-item rounded-2xl border border-navy-900/10 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-5 text-left font-heading font-bold text-base text-navy-950 flex items-center justify-between gap-4 hover:bg-sand-50 transition-colors">
+            <span>Quais combustíveis estão disponíveis para abastecimento?</span>
+            <i class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden p-5 pt-0 text-sm text-slate-600 leading-relaxed border-t border-navy-900/5">
+            Oferecemos Gasolina Comum, Gasolina Aditivada com agentes dispersantes, Etanol Hidratado de alto rendimento e Diesel nas especificações S10 e S500. Todos passam por testes de controle de densidade e qualidade.
+          </div>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="faq-item rounded-2xl border border-navy-900/10 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-5 text-left font-heading font-bold text-base text-navy-950 flex items-center justify-between gap-4 hover:bg-sand-50 transition-colors">
+            <span>O que está disponível na lanchonete e conveniência?</span>
+            <i class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden p-5 pt-0 text-sm text-slate-600 leading-relaxed border-t border-navy-900/5">
+            Temos uma padaria completa com pães artesanais frescos, lanchonete com salgados, doces, cafés espressos, refrigerantes, cervejas geladas, energéticos, snacks e sacos de gelo para passeios e praia.
+          </div>
+        </div>
+
+        <!-- Pergunta 5 -->
+        <div class="faq-item rounded-2xl border border-navy-900/10 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-5 text-left font-heading font-bold text-base text-navy-950 flex items-center justify-between gap-4 hover:bg-sand-50 transition-colors">
+            <span>Como funciona a estrutura de lavanderia no local?</span>
+            <i class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden p-5 pt-0 text-sm text-slate-600 leading-relaxed border-t border-navy-900/5">
+            Disponibilizamos máquinas para lavagem rápida de roupas, uma grande comodidade tanto para moradores do bairro quanto para quem está aproveitando as praias do Norte de Florianópolis.
+          </div>
+        </div>
+
+        <!-- Pergunta 6 -->
+        <div class="faq-item rounded-2xl border border-navy-900/10 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-5 text-left font-heading font-bold text-base text-navy-950 flex items-center justify-between gap-4 hover:bg-sand-50 transition-colors">
+            <span>Qual o endereço exato do Beach Posto?</span>
+            <i class="fa-solid fa-chevron-down text-sm text-slate-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden p-5 pt-0 text-sm text-slate-600 leading-relaxed border-t border-navy-900/5">
+            Estamos situados na Av. Luiz Boiteux Piazza, 2099 - Cachoeira do Bom Jesus, Florianópolis - SC, CEP 88056-000. Fácil acesso para quem vai ou volta de Canasvieiras, Ponta das Canas e Praia Brava.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RODAPÉ COMPLETO -->
+  <footer class="bg-navy-950 text-white border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+        
+        <!-- Coluna 1: Logo Oficial & Descrição -->
+        <div class="md:col-span-5 space-y-4">
+          <a href="#" class="inline-block">
+            <img src="logo.png" alt="Beach Posto" class="h-16 w-auto object-contain rounded-xl border border-white/15 bg-white p-1" />
+          </a>
+          <p class="text-sm text-slate-300 leading-relaxed max-w-sm">
+            O Beach Posto é o seu ponto de parada completo no Norte da Ilha: combustíveis com qualidade garantida, conveniência 24h, padaria, lavanderia e estação de recarga elétrica EZVolt.
+          </p>
+          <div class="flex items-center gap-2 text-xs font-bold text-beach-yellow">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> Atendimento 24 Horas
+          </div>
+        </div>
+
+        <!-- Coluna 2: Navegação Rápida -->
+        <div class="md:col-span-3 space-y-3 font-heading text-sm font-semibold text-slate-300">
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4">Navegação</p>
+          <div><a href="#posto" class="hover:text-beach-yellow transition-colors">O Posto</a></div>
+          <div><a href="#combustiveis" class="hover:text-beach-yellow transition-colors">Combustíveis</a></div>
+          <div><a href="#eletroposto" class="hover:text-beach-yellow transition-colors">Eletroposto EZVolt</a></div>
+          <div><a href="#conveniencia" class="hover:text-beach-yellow transition-colors">Conveniência & Padaria</a></div>
+          <div><a href="#servicos" class="hover:text-beach-yellow transition-colors">Serviços Automotivos</a></div>
+          <div><a href="#localizacao" class="hover:text-beach-yellow transition-colors">Localização</a></div>
+        </div>
+
+        <!-- Coluna 3: Atendimento & Redes Sociais -->
+        <div class="md:col-span-4 space-y-3">
+          <p class="text-xs font-bold text-white uppercase tracking-wider mb-4 font-heading">Atendimento & Endereço</p>
+          
+          <!-- Endereço -->
+          <div class="flex items-start gap-3 p-3 rounded-2xl bg-white/5 border border-white/10">
+            <div class="w-9 h-9 rounded-xl bg-beach-red/20 text-beach-red flex items-center justify-center text-base shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-medium">Endereço Oficial</p>
+              <p class="text-xs sm:text-sm font-semibold text-white">Av. Luiz Boiteux Piazza, 2099</p>
+              <p class="text-xs text-slate-400">Cachoeira do Bom Jesus • Florianópolis - SC</p>
+            </div>
+          </div>
+
+          <!-- Telefone -->
+          <div class="flex items-center gap-3 p-3 rounded-2xl bg-white/5 border border-white/10">
+            <div class="w-9 h-9 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-base shrink-0">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-medium">Telefone</p>
+              <p class="text-sm font-bold text-white">(48) 30549234</p>
+            </div>
+          </div>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/554830549234?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Beach%20Posto." target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-2xl bg-white/5 hover:bg-emerald-500/15 border border-white/10 transition-colors group">
+            <div class="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-base shrink-0 group-hover:scale-105 transition-transform">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-medium">WhatsApp Oficial</p>
+              <p class="text-sm font-bold text-white">(48) 30549234</p>
+            </div>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/beachposto?igshid=pm95jwybc2ks" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-2xl bg-white/5 hover:bg-[#E4405F]/15 border border-white/10 transition-colors group">
+            <div class="w-9 h-9 rounded-xl bg-pink-500/20 text-[#E4405F] flex items-center justify-center text-base shrink-0 group-hover:scale-105 transition-transform">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-medium">Instagram Oficial</p>
+              <p class="text-sm font-bold text-white">@beachposto</p>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Barra de Copyright -->
+      <div class="pt-8 mt-12 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© 2026 Beach Posto. Todos os direitos reservados.</p>
+        
+        <div class="flex items-center gap-4">
+          <a href="https://www.instagram.com/beachposto?igshid=pm95jwybc2ks" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-[#E4405F] text-base transition-colors" aria-label="Instagram Beach Posto" title="Instagram @beachposto">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/554830549234?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Beach%20Posto." target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-emerald-400 text-base transition-colors" aria-label="WhatsApp Beach Posto" title="WhatsApp (48) 30549234">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <span class="text-white/20">•</span>
+          <p>Florianópolis - Santa Catarina</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DUPLO (GPS + WHATSAPP) -->
+  <aside aria-label="Ações Rápidas" class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+    <!-- Botão Traçar Rota no GPS -->
+    <a href="https://www.google.com/maps/search/?api=1&query=Av.+Luiz+Boiteux+Piazza,+2099+-+Cachoeira+do+Bom+Jesus,+Florianopolis+-+SC,+88056-000" target="_blank" rel="noopener noreferrer" class="w-13 h-13 rounded-full bg-beach-red hover:bg-beach-darkred text-white shadow-xl hover:shadow-2xl flex items-center justify-center text-xl hover:scale-110 active:scale-95 transition-all duration-200 relative group" aria-label="Traçar Rota no Google Maps até o Beach Posto" title="Traçar rota no GPS">
+      <i class="fa-solid fa-location-arrow"></i>
+      <span class="absolute right-16 px-3 py-1.5 rounded-xl bg-navy-950 text-white text-xs font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-md pointer-events-none">
+        Como Chegar
+      </span>
+    </a>
+
+    <!-- Botão WhatsApp -->
+    <a href="https://wa.me/554830549234?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Beach%20Posto." target="_blank" rel="noopener noreferrer" class="w-13 h-13 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-xl hover:shadow-2xl flex items-center justify-center text-2xl hover:scale-110 active:scale-95 transition-all duration-200 relative group" aria-label="Falar no WhatsApp com o Beach Posto" title="WhatsApp Beach Posto">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-rose-500 rounded-full border-2 border-white animate-ping"></span>
+      <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-rose-500 rounded-full border-2 border-white"></span>
+      <span class="absolute right-16 px-3 py-1.5 rounded-xl bg-navy-950 text-white text-xs font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-md pointer-events-none">
+        Atendimento 24h
+      </span>
+    </a>
+  </aside>
+
+  <!-- Scripts Externos (Zero scripts inline para conformidade total com script-src 'self') -->
+  <script src="js/app.js"></script>
+</body>
+</html>
